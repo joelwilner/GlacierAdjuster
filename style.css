@@ -1,0 +1,32 @@
+html, body { margin: 0; height: 100%; background: #222; font: 13px/1.35 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+#map { position: absolute; inset: 0; background: #444; }
+#panel {
+  position: absolute; top: 10px; left: 54px; z-index: 1000; width: 250px;
+  background: rgba(255, 255, 255, 0.95); border-radius: 6px; padding: 8px 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4); max-height: calc(100% - 40px); overflow-y: auto;
+}
+#panel .row { margin: 5px 0; }
+#panel .small { font-size: 12px; color: #444; }
+#panel button { font: inherit; padding: 2px 7px; cursor: pointer; }
+#panel button.on { background: #1f6feb; color: #fff; border: 1px solid #1f6feb; border-radius: 3px; }
+#panel input { font: inherit; }
+#goto { width: 100%; box-sizing: border-box; }
+#sel { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px 0; }
+#sel table { border-collapse: collapse; font-size: 12px; }
+#sel td { padding: 0 6px 0 0; }
+#msg { color: #b00; min-height: 1em; }
+.hidden { display: none; }
+#status {
+  position: absolute; bottom: 18px; left: 10px; z-index: 1000; background: rgba(0, 0, 0, 0.6);
+  color: #fff; font: 12px monospace; padding: 2px 6px; border-radius: 3px; pointer-events: none;
+}
+#legend {
+  position: absolute; bottom: 18px; right: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.9);
+  font-size: 11px; padding: 4px 7px; border-radius: 4px; line-height: 1.5;
+}
+#legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; border: 1px solid #222; }
+#legend .bar { display: inline-block; width: 110px; height: 8px; vertical-align: middle; margin: 0 4px; }
+.lbl button { font: 12px sans-serif; margin: 2px 2px 0 0; padding: 1px 6px; cursor: pointer; }
+.lbl button.on { outline: 2px solid #000; }
+.toe-handle { box-sizing: border-box; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 2px #e8630a; background: rgba(232, 99, 10, 0.35); cursor: move; }
+.leaflet-container.adding { cursor: crosshair; }

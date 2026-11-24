@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toe &amp; Moraine Mapper</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="panel">
+  <div class="row"><b>Toe &amp; Moraine Mapper</b></div>
+  <div class="row">
+    <button id="mSelect" class="mode on">Select</button>
+    <button id="mAdd" class="mode">Add toe</button>
+    <button id="undo" title="Undo the last edit or label">Undo</button>
+  </div>
+  <div class="row">
+    <input id="goto" size="22" placeholder="go to: toe, ICE-D site or sample, lat,lon">
+  </div>
+  <div id="sel" class="row hidden"></div>
+  <div class="row">
+    <button id="dlToes">Toe edits CSV</button>
+    <button id="dlLabels">Boulder labels CSV</button>
+  </div>
+  <div class="row">
+    <button id="load">Load CSV…</button>
+    <input id="file" type="file" accept=".csv" multiple hidden>
+  </div>
+  <div id="counts" class="row small"></div>
+  <div id="msg" class="row small"></div>
+</div>
+<div id="status"></div>
+<div id="legend"></div>
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
